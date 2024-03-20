@@ -50,4 +50,11 @@ class Quiz {
       }, 0) / this.questions.length
     );
   }
+
+  restart() {
+    this.timeRemaining = this.timeLimit;
+    this.correctAnswers = 0;
+    this.currentQuestionIndex = 0;
+    this.shuffleQuestions();
+  }
 }
